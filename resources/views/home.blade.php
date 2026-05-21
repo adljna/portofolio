@@ -940,7 +940,7 @@
 
                     <!-- LEFT -->
                     <div class="about-photo-card">
-                        <img src="/images/profile.png" alt="Profile photo">
+                        <img src="{{ asset('images/profile.png') }}" alt="Profile photo">
                     </div>
 
                     <!-- RIGHT -->
@@ -1063,7 +1063,7 @@
                             rel="noopener">
                             View Project →
                         </a>
-                        <img src="images/project1.png" alt="Project 1">
+                        <img src="{{ asset('images/project1.png') }}" alt="Project 1">
 
                         <div class="project-overlay">
                             <h2>IT BSC Dashboard Development for Industrial Performance Monitoring</h2>
@@ -1086,7 +1086,7 @@
                             View Project →
                         </a>
 
-                        <img src="images/project2.png" alt="Project 2">
+                        <img src="{{ asset('images/project2.png') }}" alt="Project 2">
 
                         <div class="project-overlay">
                             <h2>Sentiment Analysis of Ali Khamenei's Death on Indonesian News Articles</h2>
@@ -1108,7 +1108,7 @@
                             View Project →
                         </a>
 
-                        <img src="images/project3.png" alt="Project 3">
+                        <img src="{{ asset('images/project3.png') }}" alt="Project 3">
 
                         <div class="project-overlay">
                             <h2>Sentiment Analysis of <br> blu by BCA Digital <br> on Google Play Reviews</h2>
@@ -1129,7 +1129,7 @@
                             View Project →
                         </a>
 
-                        <img src="images/project4.png" alt="Project 4">
+                        <img src="{{ asset('images/project4.png') }}" alt="Project 4">
 
                         <div class="project-overlay">
                             <h2>Data Lakehouse Design for Student Course Registration System</h2>
@@ -1156,7 +1156,7 @@
                             View Project →
                         </a>
 
-                        <img src="images/project5.png" alt="Project 5">
+                        <img src="{{ asset('images/project5.png') }}" alt="Project 5">
 
                         <div class="project-overlay">
                             <h2>Health Burden Clustering in South Korea Using K-Means</h2>
