@@ -50,49 +50,49 @@
         }
 
         .navbar {
-    position: fixed;
-    top: 30px;
-    right: 50px;
-    z-index: 1000;
-}
+            position: fixed;
+            top: 30px;
+            right: 50px;
+            z-index: 1000;
+        }
 
-.nav-menu {
-    width: fit-content;
-    height: 52px;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
+        .nav-menu {
+            width: fit-content;
+            height: 52px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+            padding: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-.nav-menu a {
-    height: 40px;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 12px;
-    white-space: nowrap;
-    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
-}
+        .nav-menu a {
+            height: 40px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 12px;
+            white-space: nowrap;
+            transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+        }
 
-.nav-menu a:hover {
-    background: rgba(72, 122, 192, 0.45);
-}
+        .nav-menu a:hover {
+            background: rgba(72, 122, 192, 0.45);
+        }
 
-.nav-menu a.active {
-    background: rgba(35, 108, 211, 0.82);
-    color: #ffffff;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
-}
+        .nav-menu a.active {
+            background: rgba(35, 108, 211, 0.82);
+            color: #ffffff;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+        }
 
         .page {
             position: relative;

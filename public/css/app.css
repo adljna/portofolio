@@ -97,30 +97,7 @@ body {
     gap: 12px;
 }
 
-.social-tags {
-    display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
-}
 
-.social-tags .tag {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 10px 16px;
-    border-radius: 20px;
-
-    text-decoration: none;
-    color: #000;
-    background: #fff;
-
-    transition: 0.3s ease;
-}
-
-.social-tags .tag:hover {
-    transform: translateY(-2px);
-}
 .tag {
     padding: 8px 16px;
     border-radius: 999px;
