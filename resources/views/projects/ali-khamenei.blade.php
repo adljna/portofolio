@@ -154,8 +154,8 @@
     <script>
         window.PROJECT_SLUG = 'ali-khamenei';
     </script>
-    <script src="{{ asset('js/project-pages-data.js') }}"></script>
-    <script src="{{ asset('js/project-detail-template.js') }}"></script>
+    <script src="/js/project-pages-data.js"></script>
+    <script src="/js/project-detail-template.js"></script>
 </body>
 
 </html>
