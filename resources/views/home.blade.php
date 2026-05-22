@@ -102,14 +102,14 @@
             position: sticky;
             top: 0;
             min-height: 100vh;
-            width: 100vw;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             /* vertical */
             align-items: center;
             /* horizontal */
-            padding: 120px 64px;
+            padding: 110px clamp(20px, 5vw, 64px);
             text-align: center;
         }
 
@@ -123,11 +123,11 @@
             position: sticky;
             top: 0;
             min-height: 100vh;
-            width: 100vw;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 80px 64px;
+            padding: 80px clamp(20px, 5vw, 64px);
         }
 
         .stack.about {
@@ -160,8 +160,8 @@
         }
 
         .hero-title {
-            padding: 40px;
-            font-size: 100px;
+            padding: clamp(18px, 3vw, 32px);
+            font-size: clamp(54px, 5.3vw, 78px);
             line-height: 1.05;
             font-weight: 900;
             font-style: italic;
@@ -231,15 +231,16 @@
         }
 
         .hero-desc {
-            font-size: 24px;
+            font-size: clamp(15px, 1.25vw, 18px);
             font-weight: 500;
-            max-width: 700px;
-            margin: 0 auto 40px auto;
+            max-width: 620px;
+            margin: 0 auto 36px auto;
+            line-height: 1.45;
         }
 
         .scroll-btn {
-            margin-top: 48px;
-            font-size: 20px;
+            margin-top: 42px;
+            font-size: clamp(14px, 1.05vw, 16px);
             color: #fff;
             text-decoration: none;
             opacity: 0.8;
@@ -260,7 +261,7 @@
         }
 
         .section-title {
-            font-size: 64px;
+            font-size: clamp(36px, 4vw, 64px);
             font-style: italic;
             line-height: 1;
             font-weight: 700;
@@ -312,7 +313,7 @@
         }
 
         .about-title {
-            font-size: 64px;
+            font-size: clamp(36px, 4vw, 64px);
             line-height: 1;
             font-weight: 700;
             letter-spacing: -3px;
@@ -325,7 +326,7 @@
         }
 
         .about-text {
-            font-size: 24px;
+            font-size: clamp(16px, 1.55vw, 24px);
             line-height: 1.5;
             opacity: 1.0;
         }
@@ -343,6 +344,11 @@
             backdrop-filter: blur(10px);
             font-size: 20px;
             white-space: nowrap;
+        }
+
+        .social-tags .tag {
+            padding: 9px 15px;
+            font-size: clamp(14px, 1.05vw, 16px);
         }
 
         .tech-card {
@@ -388,7 +394,7 @@
             gap: 8px;
             padding: 8px 14px;
             border-radius: 999px;
-            font-size: 22px;
+            font-size: clamp(15px, 1.3vw, 22px);
             color: #ffffff;
 
             background: rgba(255, 255, 255, 0.12);
@@ -414,8 +420,8 @@
 
         .stack.project {
             margin-top: -35px;
-            padding-top: 120px;
-            padding-bottom: 100px;
+            padding-top: clamp(90px, 9vw, 120px);
+            padding-bottom: clamp(70px, 7vw, 100px);
             position: relative;
             z-index: 2;
             min-height: 110vh;
@@ -448,7 +454,7 @@
 
         .project-carousel {
             position: relative;
-            width: 72%;
+            width: min(72%, 980px);
             height: 82%;
             display: flex;
             align-items: center;
@@ -675,7 +681,7 @@
         }
 
         .experience-heading {
-            font-size: 64px;
+            font-size: clamp(36px, 4vw, 64px);
             font-style: italic;
             line-height: 1;
             font-weight: 700;
@@ -692,7 +698,7 @@
             margin-top: 12px;
             color: rgba(255, 255, 255, 0.68);
             letter-spacing: 0px;
-            font-size: 24px;
+            font-size: clamp(15px, 1.5vw, 24px);
             line-height: 1.7;
         }
 
@@ -887,6 +893,734 @@
 
             .about-tags {
                 justify-content: center;
+            }
+        }
+
+        /* =========================
+           RESPONSIVE ADJUSTMENTS
+           Only changes sizing/spacing. Layout & JS logic stay the same.
+        ========================= */
+        @media (max-width: 1200px) {
+            .navbar {
+                top: 24px;
+                right: 32px;
+            }
+
+            .nav-menu a {
+                padding: 0 20px;
+                font-size: 14px;
+            }
+
+            .about-layout {
+                max-width: 1100px;
+            }
+
+            .about-photo-card img {
+                max-width: 340px;
+            }
+
+            .stack-wrapper {
+                gap: 18px;
+            }
+
+            .project-carousel-wrapper {
+                height: 72vh;
+            }
+
+            .project-overlay {
+                max-width: 460px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .navbar {
+                right: 24px;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+
+            .about-top {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about-photo-card {
+                display: flex;
+            }
+
+            .about-info {
+                align-items: center;
+            }
+
+            .stack-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .tech-title {
+                text-align: center;
+            }
+
+            .stack.project {
+                min-height: auto;
+                overflow: hidden;
+            }
+
+            .project-carousel-wrapper {
+                height: 68vh;
+            }
+
+            .project-carousel {
+                width: min(86vw, 760px);
+            }
+
+            .project-overlay {
+                left: 22px;
+                right: 22px;
+                bottom: 22px;
+                max-width: none;
+                padding: 18px 20px;
+            }
+
+            .project-overlay h2 {
+                font-size: 22px;
+            }
+
+            .project-overlay p {
+                font-size: 14px;
+                line-height: 1.55;
+            }
+
+            .stack.experience {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                top: 18px;
+                left: 50%;
+                right: auto;
+                width: auto;
+                transform: translateX(-50%);
+            }
+
+            .nav-menu {
+                height: 46px;
+                border-radius: 14px;
+                padding: 5px;
+                gap: 4px;
+            }
+
+            .nav-menu a {
+                height: 34px;
+                padding: 0 13px;
+                font-size: 12px;
+                border-radius: 10px;
+            }
+
+            .hero {
+                min-height: 100svh;
+                padding: 100px 20px 72px;
+            }
+
+            .hero-title {
+                font-size: clamp(42px, 11vw, 58px);
+                padding: 18px 0 22px;
+            }
+
+            .hero-desc {
+                max-width: 92vw;
+                margin-bottom: 28px;
+            }
+
+            .social-tags {
+                justify-content: center;
+                gap: 9px;
+            }
+
+            .social-tags .tag {
+                padding: 8px 12px;
+                border-radius: 14px;
+            }
+
+            .scroll-btn {
+                margin-top: 34px;
+            }
+
+            .stack {
+                position: relative;
+                min-height: auto;
+                width: 100%;
+                padding: 96px 22px;
+            }
+
+            .stack.about {
+                clip-path: polygon(0 2%, 100% 6%, 100% 100%, 0 100%);
+            }
+
+            .about-layout {
+                gap: 32px;
+            }
+
+            .about-photo-card img {
+                max-width: 280px;
+                padding: 14px;
+            }
+
+            .about-title,
+            .section-title,
+            .experience-heading {
+                letter-spacing: -1.5px;
+            }
+
+            .about-tags {
+                justify-content: center;
+            }
+
+            .about-tags .tag {
+                font-size: 15px;
+                padding: 8px 12px;
+            }
+
+            .tech-title {
+                font-size: 24px;
+            }
+
+            .stack-group h4 {
+                font-size: 20px;
+            }
+
+            .stack-pill i {
+                font-size: 18px;
+            }
+
+            .stack.project {
+                clip-path: none;
+                margin-top: 0;
+                padding: 86px 20px 86px;
+                min-height: auto;
+                background: rgba(255, 255, 255, 0.10);
+                backdrop-filter: blur(18px);
+                -webkit-backdrop-filter: blur(18px);
+                border-top: 1px solid rgba(255, 255, 255, 0.18);
+                box-shadow: none;
+            }
+
+            .stack.project::before,
+            .stack.project::after {
+                display: none;
+            }
+
+            .section-title {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto 30px;
+            }
+
+            .project-carousel-wrapper {
+                width: 100%;
+                height: auto;
+                min-height: 560px;
+                padding-top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                overflow: hidden;
+            }
+
+            .project-carousel {
+                width: min(86vw, 520px);
+                height: 430px;
+                margin: 0 auto;
+                gap: 24px;
+            }
+
+            .project-carousel-card {
+                flex: 0 0 100%;
+                height: 100%;
+            }
+
+            .project-indicators {
+                bottom: 28px;
+            }
+
+            .project-link {
+                top: 16px;
+                right: 16px;
+                font-size: 13px;
+                padding: 8px 12px;
+            }
+
+            .project-overlay {
+                left: 14px;
+                right: 14px;
+                bottom: 14px;
+                padding: 14px 15px;
+                border-radius: 16px;
+            }
+
+            .project-overlay h2 {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+
+            .project-overlay p {
+                font-size: 12px;
+                line-height: 1.45;
+            }
+
+            .project-tags {
+                gap: 7px;
+            }
+
+            .project-tags span {
+                font-size: 11px;
+                padding: 6px 9px;
+            }
+
+            .section-divider {
+                height: 56px;
+            }
+
+            .stack.experience {
+                min-height: auto;
+                padding: 88px 20px 90px;
+            }
+
+            .experience-inner {
+                min-height: auto;
+                padding: 72px 0 40px;
+                overflow: visible;
+            }
+
+            .experience-heading {
+                font-size: 42px;
+                line-height: 1.05;
+                letter-spacing: -2px;
+                margin-bottom: 28px;
+            }
+
+            .experience-heading p {
+                font-size: 16px;
+                line-height: 1.5;
+                margin-top: 10px;
+                max-width: 320px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .experience-circular-gallery {
+                height: auto;
+                min-height: 660px;
+                gap: 28px;
+                padding: 0 6vw 20px;
+                align-items: flex-start;
+                overflow-y: visible;
+            }
+
+            .experience-gallery-card {
+                flex: 0 0 240px;
+            }
+
+            .experience-gallery-image {
+                width: 240px;
+                height: 280px;
+                border-radius: 18px;
+            }
+
+            .experience-gallery-text {
+                margin-top: 18px;
+            }
+
+            .experience-gallery-text span {
+                margin-bottom: 8px;
+                font-size: 12px;
+            }
+
+            .experience-gallery-text h3 {
+                font-size: 18px;
+                line-height: 1.2;
+                margin-bottom: 6px;
+            }
+
+            .experience-gallery-text h4 {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .experience-gallery-text p {
+                width: 240px;
+                font-size: 13px;
+                line-height: 1.55;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-menu a {
+                padding: 0 10px;
+                font-size: 11px;
+            }
+
+            .hero-title {
+                font-size: clamp(38px, 12vw, 50px);
+            }
+
+            .hero-desc {
+                font-size: 14px;
+            }
+
+            .social-tags .tag {
+                font-size: 13px;
+            }
+
+            .about-photo-card img {
+                max-width: 230px;
+            }
+
+            .stack.project {
+                padding: 78px 16px 82px;
+            }
+
+            .section-title {
+                margin-bottom: 26px;
+            }
+
+            .project-carousel-wrapper {
+                min-height: 535px;
+            }
+
+            .project-carousel {
+                width: min(88vw, 420px);
+                height: 400px;
+            }
+
+            .project-overlay {
+                left: 14px;
+                right: 14px;
+            }
+
+            .stack.experience {
+                padding: 80px 16px 84px;
+            }
+
+            .experience-heading {
+                font-size: 36px;
+                margin-bottom: 24px;
+            }
+
+            .experience-heading p {
+                font-size: 15px;
+                max-width: 300px;
+            }
+
+            .experience-circular-gallery {
+                min-height: 620px;
+                gap: 22px;
+                padding: 0 5vw 16px;
+            }
+
+            .experience-gallery-card {
+                flex-basis: 220px;
+            }
+
+            .experience-gallery-image {
+                width: 220px;
+                height: 255px;
+            }
+
+            .experience-gallery-text h3 {
+                font-size: 17px;
+            }
+
+            .experience-gallery-text h4 {
+                font-size: 13px;
+            }
+
+            .experience-gallery-text p {
+                width: 220px;
+                font-size: 12.5px;
+                line-height: 1.5;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .navbar {
+                top: 24px;
+                right: 42px;
+            }
+
+            .nav-menu {
+                height: 44px;
+                padding: 5px;
+                border-radius: 14px;
+                gap: 5px;
+            }
+
+            .nav-menu a {
+                height: 34px;
+                padding: 0 20px;
+                font-size: 14px;
+                border-radius: 10px;
+            }
+
+            .hero {
+                padding: 100px 56px;
+            }
+
+            .hero-title {
+                padding: 28px;
+                font-size: clamp(48px, 4.6vw, 72px);
+            }
+
+            .hero-desc {
+                max-width: 560px;
+                font-size: clamp(14px, 1.05vw, 17px);
+                margin-bottom: 30px;
+            }
+
+            .social-tags {
+                gap: 10px;
+            }
+
+            .social-tags .tag,
+            .about-tags .tag {
+                padding: 8px 14px;
+                font-size: 15px;
+                border-radius: 14px;
+            }
+
+            .scroll-btn {
+                margin-top: 36px;
+                font-size: 15px;
+            }
+
+            .stack {
+                padding: 70px 54px;
+            }
+
+            .about-layout {
+                max-width: 1050px;
+                gap: 30px;
+            }
+
+            .about-top {
+                gap: 30px;
+            }
+
+            .about-photo-card img {
+                max-width: 290px;
+                padding: 16px;
+                border-radius: 18px;
+            }
+
+            .about-info {
+                gap: 18px;
+            }
+
+            .about-title,
+            .section-title,
+            .experience-heading {
+                font-size: clamp(38px, 3.4vw, 48px);
+                letter-spacing: -2px;
+            }
+
+            .about-text {
+                font-size: clamp(15px, 1.2vw, 17px);
+                line-height: 1.55;
+            }
+
+            .tech-title {
+                margin-bottom: 18px;
+                font-size: 22px;
+            }
+
+            .stack-wrapper {
+                gap: 18px;
+            }
+
+            .stack-group {
+                padding: 16px;
+                border-radius: 16px;
+            }
+
+            .stack-group h4 {
+                margin-bottom: 12px;
+                font-size: 18px;
+            }
+
+            .stack-items {
+                gap: 8px;
+            }
+
+            .stack-pill {
+                gap: 7px;
+                padding: 7px 12px;
+                font-size: 15px;
+            }
+
+            .stack-pill i {
+                font-size: 18px;
+            }
+
+            .stack-pill img {
+                width: 17px;
+                height: 17px;
+            }
+
+            .stack.project {
+                padding-top: 96px;
+                padding-bottom: 78px;
+                min-height: 96vh;
+            }
+
+            .project-carousel-wrapper {
+                height: 64vh;
+            }
+
+            .project-carousel {
+                width: 64%;
+                height: 78%;
+            }
+
+            .project-carousel-card {
+                border-radius: 22px;
+            }
+
+            .project-link {
+                top: 18px;
+                right: 18px;
+                padding: 8px 14px;
+                border-radius: 12px;
+                font-size: 15px;
+            }
+
+            .project-overlay {
+                left: 24px;
+                bottom: 24px;
+                max-width: 380px;
+                padding: 16px 18px;
+                border-radius: 16px;
+            }
+
+            .project-overlay h2 {
+                font-size: 20px;
+                margin-bottom: 8px;
+            }
+
+            .project-overlay p {
+                font-size: 13px;
+                line-height: 1.55;
+            }
+
+            .project-tags {
+                margin-top: 10px;
+                gap: 8px;
+            }
+
+            .project-tags span {
+                padding: 6px 10px;
+                font-size: 11px;
+            }
+
+            .project-indicator {
+                width: 11px;
+                height: 11px;
+            }
+
+            .project-indicator.active {
+                width: 24px;
+            }
+
+            .section-divider {
+                height: 58px;
+            }
+
+            .stack.experience {
+                min-height: 96vh;
+                padding: 98px 54px 86px;
+            }
+
+            .experience-inner {
+                min-height: auto;
+                padding: 72px 0 64px;
+            }
+
+            .experience-heading {
+                margin-bottom: 36px;
+            }
+
+            .experience-heading p {
+                margin-top: 10px;
+                font-size: 16px;
+                line-height: 1.55;
+            }
+
+            .experience-circular-gallery {
+                gap: 64px;
+                padding: 0 7vw;
+            }
+
+            .experience-gallery-card {
+                flex-basis: 280px;
+            }
+
+            .experience-gallery-image {
+                width: 280px;
+                height: 330px;
+                border-radius: 18px;
+            }
+
+            .experience-gallery-text {
+                margin-top: 20px;
+            }
+
+            .experience-gallery-text span {
+                margin-bottom: 8px;
+                font-size: 11px;
+            }
+
+            .experience-gallery-text h3 {
+                font-size: 19px;
+            }
+
+            .experience-gallery-text h4 {
+                font-size: 13px;
+            }
+
+            .experience-gallery-text p {
+                width: 270px;
+                font-size: 12px;
+                line-height: 1.55;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .about-title,
+            .section-title,
+            .experience-heading {
+                font-size: clamp(28px, 8vw, 36px);
+            }
+
+            .about-text {
+                font-size: 14px;
+            }
+
+            .stack-group h4 {
+                font-size: 17px;
+            }
+
+            .stack-pill {
+                font-size: 13px;
+                padding: 7px 10px;
+            }
+
+            .experience-heading p {
+                font-size: 14px;
+                line-height: 1.5;
             }
         }
     </style>
@@ -1103,8 +1837,7 @@
                         </div>
                     </article>
                     <article class="project-carousel-card">
-                        <a href="https://link-ke-project-kamu.com" class="project-link" target="_blank"
-                            rel="noopener">
+                        <a href="{{ url('/projects/blu-sentiment-analysis') }}" class="project-link">
                             View Project →
                         </a>
 
