@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Detail</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="{{ asset('css/project-detail-template.css') }}">
+    <link rel="stylesheet" href="/css/project-detail-template.css">
 </head>
 
 <body>
@@ -41,7 +43,8 @@
                 <div class="hero-actions">
                     <a href="#process" class="primary-btn">Explore Process</a>
                     <a href="#insights" class="secondary-btn">View Insights</a>
-                    <a href="#" class="secondary-btn github-btn" id="githubBtn" target="_blank" rel="noopener noreferrer">
+                    <a href="#" class="secondary-btn github-btn" id="githubBtn" target="_blank"
+                        rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                         View GitHub
                     </a>
@@ -86,7 +89,8 @@
             <div class="section-heading reveal">
                 <span class="section-kicker">02 · Key Insights</span>
                 <h2>What this project highlights.</h2>
-                <p>Important numbers and project-specific insights are summarized into compact cards to make the story easier to scan.</p>
+                <p>Important numbers and project-specific insights are summarized into compact cards to make the story
+                    easier to scan.</p>
             </div>
 
             <div class="insight-grid" id="insightGrid"></div>
@@ -122,7 +126,8 @@
             <div class="section-heading reveal">
                 <span class="section-kicker">04 · Visual Gallery</span>
                 <h2>Visual evidence from the project.</h2>
-                <p>Selected charts, dashboard/report screenshots, and visual outputs are displayed as a horizontal gallery.</p>
+                <p>Selected charts, dashboard/report screenshots, and visual outputs are displayed as a horizontal
+                    gallery.</p>
             </div>
 
             <div class="image-gallery" id="imageGallery"></div>
@@ -139,7 +144,8 @@
         <section class="closing-section reveal">
             <span>Project Detail</span>
             <h2>Designed as a reusable portfolio template.</h2>
-            <p>This page structure can be reused for other data analytics projects by only changing the content in <code>project-pages-data.js</code>.</p>
+            <p>This page structure can be reused for other data analytics projects by only changing the content in
+                <code>project-pages-data.js</code>.</p>
             <a href="{{ url('/#project') }}" class="primary-btn">Back to Projects</a>
         </section>
     </main>

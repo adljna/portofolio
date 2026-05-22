@@ -1794,7 +1794,7 @@
 
                     <article class="project-carousel-card">
                         <a href="{{ route('projects.powerbi') }}" class="project-link">
-                        View Project →
+                            View Project →
                         </a>
                         <img src="{{ asset('images/project1.png') }}" alt="Project 1">
 
