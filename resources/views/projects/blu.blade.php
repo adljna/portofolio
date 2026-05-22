@@ -11,7 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/blu-project.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/project-detail-template.css') }}">
 </head>
 
 <body>
@@ -19,9 +20,9 @@
     <div class="noise"></div>
 
     <header class="project-nav" id="top">
-        <a href="../project" class="brand-link" aria-label="Back to portfolio">
-            <span class="brand-mark">NA</span>
-            <span>Portfolio</span>
+        <a href="{{ route('home') }}#project" class="brand-link">
+            <span class="brand-back" aria-hidden="true">←</span>
+            <span>Project</span>
         </a>
 
         <nav class="nav-pills" aria-label="Project navigation">
@@ -49,11 +50,11 @@
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#workflow" class="primary-btn">Explore Process</a>
+                    <a href="#process" class="primary-btn">Explore Process</a>
                     <a href="#insights" class="secondary-btn">View Insights</a>
 
-                    <a href="https://github.com/adljna/Blu-SentimentAnalysis" class="secondary-btn github-btn" target="_blank"
-                        rel="noopener noreferrer">
+                    <a href="https://github.com/adljna/Blu-SentimentAnalysis" class="secondary-btn github-btn"
+                        target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                         View GitHub
                     </a>

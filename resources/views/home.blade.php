@@ -1793,9 +1793,8 @@
                 <div class="project-carousel" id="projectCarousel">
 
                     <article class="project-carousel-card">
-                        <a href="https://link-ke-project-kamu.com" class="project-link" target="_blank"
-                            rel="noopener">
-                            View Project →
+                        <a href="{{ route('projects.powerbi') }}" class="project-link">
+                        View Project →
                         </a>
                         <img src="{{ asset('images/project1.png') }}" alt="Project 1">
 
@@ -1815,10 +1814,8 @@
                     </article>
 
                     <article class="project-carousel-card">
-                        <a href="https://link-ke-project-kamu.com" class="project-link" target="_blank"
-                            rel="noopener">
-                            View Project →
-                        </a>
+                        <a href="{{ route('projects.ali') }}" class="project-link">View Project →</a>
+
 
                         <img src="{{ asset('images/project2.png') }}" alt="Project 2">
 
@@ -1837,7 +1834,7 @@
                         </div>
                     </article>
                     <article class="project-carousel-card">
-                        <a href="{{ url('/projects/blu-sentiment-analysis') }}" class="project-link">
+                        <a href="{{ route('projects.blu') }}" class="project-link">
                             View Project →
                         </a>
 
@@ -1857,10 +1854,7 @@
                         </div>
                     </article>
                     <article class="project-carousel-card">
-                        <a href="https://link-ke-project-kamu.com" class="project-link" target="_blank"
-                            rel="noopener">
-                            View Project →
-                        </a>
+                        <a href="{{ route('projects.etl') }}" class="project-link">View Project →</a>
 
                         <img src="{{ asset('images/project4.png') }}" alt="Project 4">
 
@@ -1884,10 +1878,7 @@
                         </div>
                     </article>
                     <article class="project-carousel-card">
-                        <a href="https://link-ke-project-kamu.com" class="project-link" target="_blank"
-                            rel="noopener">
-                            View Project →
-                        </a>
+                        <a href="{{ route('projects.clustering') }}" class="project-link">View Project →</a>
 
                         <img src="{{ asset('images/project5.png') }}" alt="Project 5">
 
