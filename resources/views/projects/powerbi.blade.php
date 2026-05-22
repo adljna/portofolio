@@ -54,7 +54,7 @@
                     <div class="visual-summary">
                         <span id="visualLabel"></span>
                         <strong id="visualValue"></strong>
-                        
+                        <div class="visual-bars" id="visualBars"></div>
                     </div>
                 </div>
 

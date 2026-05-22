@@ -9,10 +9,22 @@ window.PROJECT_PAGES = {
     "visualLabel": "Dashboard Scope",
     "visualValue": "20 KPI Framework",
     "visualBars": [
-      ["4 Perspectives", 100],
-      ["20+ KPIs", 90],
-      ["5-Year Data", 80],
-      ["4 Branches", 70]
+      [
+        "Corporate Contribution",
+        88
+      ],
+      [
+        "Customer orientation",
+        76
+      ],
+      [
+        "Operational Excellence",
+        82
+      ],
+      [
+        "Future Orientation",
+        70
+      ]
     ],
     "floatOne": [
       "Perspectives",
