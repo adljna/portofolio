@@ -1,0 +1,119 @@
+/* =========================================================
+   PORTFOLIO SHARED STYLE
+   Shared background helpers + reusable navbar component.
+   Load this file AFTER page-specific CSS so navbar styling is consistent.
+   ========================================================= */
+
+:root {
+    --bg: #142b42;
+    --blue: #236cd3;
+    --sky: #739cc6;
+    --sand: #e4d994;
+    --glass: rgba(255, 255, 255, 0.12);
+    --glass-strong: rgba(255, 255, 255, 0.18);
+    --line: rgba(255, 255, 255, 0.18);
+    --text: #ffffff;
+    --muted: rgba(255, 255, 255, 0.70);
+    --soft: rgba(255, 255, 255, 0.52);
+    --shadow: 0 20px 54px rgba(0, 0, 0, 0.24);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed !important;
+    top: 24px !important;
+    right: 50px !important;
+    left: auto !important;
+    transform: none !important;
+    z-index: 1000 !important;
+    width: auto !important;
+}
+
+.nav-menu {
+    width: fit-content !important;
+    height: 44px !important;
+    border-radius: 14px !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22) !important;
+    padding: 5px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+}
+
+.nav-menu a {
+    height: 34px !important;
+    padding: 0 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    border-radius: 10px !important;
+    white-space: nowrap !important;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease !important;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: rgba(35, 108, 211, 0.82) !important;
+    color: #ffffff !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Because gallery now has the same fixed navbar as home */
+.gallery-page .page {
+    padding-top: 104px !important;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 18px !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+        width: auto !important;
+    }
+
+    .nav-menu {
+        height: 46px !important;
+        border-radius: 14px !important;
+        padding: 5px !important;
+        gap: 4px !important;
+    }
+
+    .nav-menu a {
+        height: 34px !important;
+        padding: 0 13px !important;
+        font-size: 12px !important;
+        border-radius: 10px !important;
+    }
+
+    .gallery-page .page {
+        padding-top: 92px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu a {
+        padding: 0 10px !important;
+        font-size: 11px !important;
+    }
+
+    .gallery-page .page {
+        padding-top: 86px !important;
+    }
+}
