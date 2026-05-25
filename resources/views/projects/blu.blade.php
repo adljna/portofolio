@@ -732,14 +732,13 @@
         </section>
 
         <section class="content-section business-section">
-
             <div class="section-heading reveal">
                 <span class="section-kicker">05 · Business Takeaways</span>
                 <h2>What the company can prioritize from the review analysis</h2>
                 <p>
                     Based on the sentiment patterns and complaint topics, the review analysis highlights several
-            product areas that should be prioritized to improve user trust, app reliability, and the overall
-            digital banking experience.
+                    product areas that should be prioritized to improve user trust, app reliability, and the overall
+                    digital banking experience.
             </div>
 
             <div class="takeaway-grid blu-takeaway-grid">

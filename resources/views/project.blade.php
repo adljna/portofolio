@@ -115,7 +115,7 @@
                         <span>ML</span>
                     </div>
 
-                    <h2>Sentiment Analysis of blu  on Google Play Reviews</h2>
+                    <h2>Sentiment Analysis of blu by BCA Digital on Google Play Reviews</h2>
                     <p>
                         An end-to-end Natural Language Processing project that transforms Google Play reviews into
                         sentiment
@@ -210,89 +210,6 @@
                 </div>
             </article>
 
-            <article class="project-card reveal" data-category="software"
-                data-keywords="portfolio website laravel blade html css javascript web development responsive animation">
-                <a href="#" class="project-open disabled" aria-label="Project detail coming soon">↗</a>
-
-                <div class="project-image">
-                    <span class="project-category">
-                        <i class="fa-solid fa-code"></i>
-                        Software
-                    </span>
-                    <img src="{{ asset('images/project-placeholder-web.png') }}" alt="Portfolio website project"
-                        onerror="this.src='{{ asset('images/project1.png') }}'">
-                </div>
-
-                <div class="project-body">
-                    <div class="project-tags">
-                        <span>Laravel</span>
-                        <span>Blade</span>
-                        <span>JS</span>
-                    </div>
-
-                    <h2>Personal Portfolio Website</h2>
-                    <p>
-                        Website portfolio interaktif dengan carousel project, halaman detail, animasi,
-                        responsive layout, dan visual glassmorphism.
-                    </p>
-                </div>
-            </article>
-
-            <article class="project-card reveal" data-category="software"
-                data-keywords="it grc governance risk compliance spbe digital service evaluation audit documentation">
-                <a href="#" class="project-open disabled" aria-label="Project detail coming soon">↗</a>
-
-                <div class="project-image">
-                    <span class="project-category">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        IT GRC
-                    </span>
-                    <img src="{{ asset('images/project-placeholder-grc.png') }}" alt="IT GRC project"
-                        onerror="this.src='{{ asset('images/project5.png') }}'">
-                </div>
-
-                <div class="project-body">
-                    <div class="project-tags">
-                        <span>Governance</span>
-                        <span>Risk</span>
-                        <span>SPBE</span>
-                    </div>
-
-                    <h2>IT Governance Evaluation</h2>
-                    <p>
-                        Project terkait evaluasi layanan digital, tata kelola TI, pemetaan risiko,
-                        dan dokumentasi kepatuhan proses teknologi informasi.
-                    </p>
-                </div>
-            </article>
-
-            <article class="project-card reveal" data-category="software"
-                data-keywords="ux design mobile app prototype figma design thinking user experience arkavidia">
-                <a href="#" class="project-open disabled" aria-label="Project detail coming soon">↗</a>
-
-                <div class="project-image">
-                    <span class="project-category">
-                        <i class="fa-solid fa-layer-group"></i>
-                        Product
-                    </span>
-                    <img src="{{ asset('images/project-placeholder-ux.png') }}" alt="UX design project"
-                        onerror="this.src='{{ asset('images/project2.png') }}'">
-                </div>
-
-                <div class="project-body">
-                    <div class="project-tags">
-                        <span>UX</span>
-                        <span>Prototype</span>
-                        <span>Figma</span>
-                    </div>
-
-                    <h2>Traditional Art App Prototype</h2>
-                    <p>
-                        Prototype aplikasi mobile untuk membantu pengguna menemukan dan mengakses
-                        pertunjukan seni tradisional dengan lebih mudah.
-                    </p>
-                </div>
-            </article>
         </section>
 
         <div class="empty-state" id="emptyState">
