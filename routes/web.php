@@ -10,3 +10,4 @@ Route::view('/project/powerbi-it-bsc-dashboard', 'projects.powerbi')->name('proj
 Route::view('/project/ali-khamenei-sentiment-analysis', 'projects.ali-khamenei')->name('projects.ali');
 Route::view('/project/data-lakehouse-etl-medallion', 'projects.etl')->name('projects.etl');
 Route::view('/project/health-burden-clustering', 'projects.clustering')->name('projects.clustering');
+Route::view('/project/music-graph-knowledge', 'projects.music-graph-knowledge')->name('projects.music-graph-knowledge');

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Nailah Adlina | Personal Website</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +58,7 @@
 
                     <!-- LEFT -->
                     <div class="about-photo-card">
-                        <img src="{{ asset('images/profile.png') }}" alt="Profile photo">
+                        <img src="{{ asset('images/profile.webp') }}" alt="Profile photo">
                     </div>
 
                     <!-- RIGHT -->
@@ -68,12 +68,16 @@
                         </h2>
 
                         <p class="about-text">
-                            Hi, I’m Adlina, someone who enjoys exploring data and transforming it into meaningful
-                            insights through analytics, visualization, and machine learning projects. Through hands-on
-                            projects and coursework in data analytics, NLP, and predictive analytics, I’ve developed a
-                            strong interest in building data-driven solutions while maintaining a GPA of 3.88/4.00. I’m
-                            also a fast learner who enjoys exploring new things, adapting to new environments and
-                            technologies, and continuously growing both technically and personally.
+                            Hi, I’m Adlina, an Information Systems student who has been exploring different areas within
+                            technology and business, from business processes, UX design, IT governance, IT service
+                            management, to data-related fields. Through my coursework and projects, I gradually found
+                            myself most interested in data analytics because I enjoy working with data, finding
+                            patterns, and turning information into insights that can support better decision-making!
+
+                            Lately, I have been focusing more on data analytics, visualization, machine learning, and
+                            NLP projects as a way to deepen my skills and understand how data can be used to solve real
+                            problems. I’m still continuously learning and exploring, but I’m excited to grow further in
+                            this field and build more impactful data-driven solutions.
                         </p>
                     </div>
 
@@ -95,12 +99,12 @@
                                 </span>
 
                                 <span class="stack-pill">
-                                    <img src="{{ asset('images/pandas.png') }}" alt="Pandas">
+                                    <img src="{{ asset('images/pandas.webp') }}" alt="Pandas">
                                     Pandas
                                 </span>
 
                                 <span class="stack-pill">
-                                    <img src="{{ asset('images/numpy.png') }}" alt="NumPy">
+                                    <img src="{{ asset('images/numpy.webp') }}" alt="NumPy">
                                     NumPy
                                 </span>
 
@@ -118,22 +122,22 @@
                                 <div class="stack-items">
 
                                     <span class="stack-pill">
-                                        <img src="{{ asset('images/pbi.png') }}" alt="Power BI">
+                                        <img src="{{ asset('images/pbi.webp') }}" alt="Power BI">
                                         Power BI
                                     </span>
 
                                     <span class="stack-pill">
-                                        <img src="{{ asset('images/tableau.png') }}" alt="Tableau">
+                                        <img src="{{ asset('images/tableau.webp') }}" alt="Tableau">
                                         Tableau
                                     </span>
 
                                     <span class="stack-pill">
-                                        <img src="{{ asset('images/matplotlib.png') }}" alt="Matplotlib">
+                                        <img src="{{ asset('images/matplotlib.webp') }}" alt="Matplotlib">
                                         Matplotlib
                                     </span>
 
                                     <span class="stack-pill">
-                                        <img src="{{ asset('images/seaborn.png') }}" alt="Seaborn">
+                                        <img src="{{ asset('images/seaborn.webp') }}" alt="Seaborn">
                                         Seaborn
                                     </span>
 
@@ -146,7 +150,7 @@
 
                             <div class="stack-items">
                                 <span class="stack-pill">
-                                    <img src="{{ asset('images/postgresql.png') }}" alt="PostgreSQL">
+                                    <img src="{{ asset('images/postgresql.webp') }}" alt="PostgreSQL">
                                     PostgreSQL
                                 </span>
 
@@ -156,7 +160,7 @@
                                 </span>
 
                                 <span class="stack-pill">
-                                    <img src="{{ asset('images/neo4j.png') }}" alt="Neo4j">
+                                    <img src="{{ asset('images/neo4j.webp') }}" alt="Neo4j">
                                     Neo4j
                                 </span>
 
@@ -181,7 +185,7 @@
                 <div class="experience-circular-gallery" id="experienceGallery">
                     <article class="experience-gallery-card">
                         <div class="experience-gallery-image">
-                            <img src="{{ asset('images/experience/mms.jpeg') }}"
+                            <img src="{{ asset('images/experience/mms.webp') }}"
                                 alt="Astra Infra Toll Road Tangerang Merak">
                         </div>
 
@@ -200,7 +204,7 @@
 
                     <article class="experience-gallery-card">
                         <div class="experience-gallery-image">
-                            <img src="{{ asset('images/experience/assistant.jpeg') }}"
+                            <img src="{{ asset('images/experience/assistant.webp') }}"
                                 alt="Information Systems Teaching Assistant">
                         </div>
 
@@ -218,7 +222,7 @@
 
                     <article class="experience-gallery-card">
                         <div class="experience-gallery-image">
-                            <img src="{{ asset('images/experience/ise.jpeg') }}" alt="Head Marketing ISE! 2025">
+                            <img src="{{ asset('images/experience/ise.webp') }}" alt="Head Marketing ISE! 2025">
                         </div>
 
                         <div class="experience-gallery-text">
@@ -236,7 +240,7 @@
 
                     <article class="experience-gallery-card">
                         <div class="experience-gallery-image">
-                            <img src="{{ asset('images/experience/hmsi.jpeg') }}"
+                            <img src="{{ asset('images/experience/hmsi.webp') }}"
                                 alt="HMSI ITS Staff of Social Development">
                         </div>
 
@@ -254,7 +258,7 @@
 
                     <article class="experience-gallery-card">
                         <div class="experience-gallery-image">
-                            <img src="{{ asset('images/experience/arkavidia.jpeg') }}" alt="UX Design Project">
+                            <img src="{{ asset('images/experience/arkavidia.webp') }}" alt="UX Design Project">
                         </div>
 
                         <div class="experience-gallery-text">
@@ -270,7 +274,7 @@
 
                     <article class="experience-gallery-card">
                         <div class="experience-gallery-image">
-                            <img src="{{ asset('images/experience/ilits.jpeg') }}" alt="Ini Lho ITS! 2025">
+                            <img src="{{ asset('images/experience/ilits.webp') }}" alt="Ini Lho ITS! 2025">
                         </div>
 
                         <div class="experience-gallery-text">
@@ -304,7 +308,7 @@
                                 ↗
                             </span>
 
-                            <img src="{{ asset('images/project1.png') }}"
+                            <img src="{{ asset('images/project1.webp') }}"
                                 alt="Power BI IT Balanced Scorecard Dashboard">
 
                             <div class="project-overlay">
@@ -331,7 +335,7 @@
                                 ↗
                             </span>
 
-                            <img src="{{ asset('images/project2.png') }}"
+                            <img src="{{ asset('images/project2.webp') }}"
                                 alt="Indonesian news sentiment analysis project">
 
                             <div class="project-overlay">
@@ -358,7 +362,7 @@
                                 ↗
                             </span>
 
-                            <img src="{{ asset('images/project3.png') }}"
+                            <img src="{{ asset('images/project3.webp') }}"
                                 alt="blu by BCA Digital sentiment analysis">
 
                             <div class="project-overlay">
@@ -385,7 +389,7 @@
                             </span>
                         </a>
 
-                        <img src="{{ asset('images/project4.png') }}" alt="Data lakehouse project">
+                        <img src="{{ asset('images/project4.webp') }}" alt="Data lakehouse project">
 
                         <div class="project-overlay">
                             <h2>Data Lakehouse Design for Student Course Registration System</h2>
@@ -412,7 +416,7 @@
                                 ↗
                             </span>
 
-                            <img src="{{ asset('images/project5.png') }}" alt="Health burden clustering project">
+                            <img src="{{ asset('images/project5.webp') }}" alt="Health burden clustering project">
 
                             <div class="project-overlay">
                                 <h2>Health Burden Clustering in South Korea Using K-Means</h2>

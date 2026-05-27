@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Gallery | Nailah Adlina</title>
+    <title>Nailah Adlina | Personal Website</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,9 +54,9 @@
                     Data Engineering
                 </button>
 
-                <button class="filter-btn" type="button" data-filter="software">
+                <button class="filter-btn" type="button" data-filter="ux">
                     <i class="fa-solid fa-code"></i>
-                    Software & GRC
+                    UX Design
                 </button>
             </div>
 
@@ -76,7 +76,7 @@
                         <i class="fa-solid fa-chart-pie"></i>
                         Business Intelligence
                     </span>
-                    <img src="{{ asset('images/project1.png') }}" alt="IT Balanced Scorecard Dashboard project">
+                    <img src="{{ asset('images/project1.webp') }}" alt="IT Balanced Scorecard Dashboard project">
                 </div>
 
                 <div class="project-body">
@@ -105,7 +105,7 @@
                         <i class="fa-solid fa-brain"></i>
                         ML / NLP
                     </span>
-                    <img src="{{ asset('images/project3.png') }}" alt="blu sentiment analysis project">
+                    <img src="{{ asset('images/project3.webp') }}" alt="blu sentiment analysis project">
                 </div>
 
                 <div class="project-body">
@@ -136,7 +136,7 @@
                         <i class="fa-solid fa-newspaper"></i>
                         Data / NLP
                     </span>
-                    <img src="{{ asset('images/project2.png') }}" alt="Indonesian news sentiment analysis project">
+                    <img src="{{ asset('images/project2.webp') }}" alt="Indonesian news sentiment analysis project">
                 </div>
 
                 <div class="project-body">
@@ -164,7 +164,7 @@
                         <i class="fa-solid fa-database"></i>
                         Engineering
                     </span>
-                    <img src="{{ asset('images/project4.png') }}" alt="Data Lakehouse project">
+                    <img src="{{ asset('images/project4.webp') }}" alt="Data Lakehouse project">
                 </div>
 
                 <div class="project-body">
@@ -192,7 +192,7 @@
                         <i class="fa-solid fa-circle-nodes"></i>
                         Data Science
                     </span>
-                    <img src="{{ asset('images/project5.png') }}" alt="Health burden clustering project">
+                    <img src="{{ asset('images/project5.webp') }}" alt="Health burden clustering project">
                 </div>
 
                 <div class="project-body">
@@ -209,8 +209,38 @@
                     </p>
                 </div>
             </article>
+            <article class="project-card reveal delay-2" data-category="data"
+                data-keywords="knowledge graph neo4j graph data science music contributor network wikidata dbpedia sparql louvain betweenness jaccard">
+                <a href="{{ route('projects.music-graph-knowledge') }}" class="project-open"
+                    aria-label="Open music graph project">↗</a>
 
+                <div class="project-image">
+                    <span class="project-category">
+                        <i class="fa-solid fa-diagram-project"></i>
+                        Knowledge Graph
+                    </span>
+
+                    <img src="{{ asset('images/project6.webp') }}"
+                        alt="Music contributor knowledge graph project" loading="lazy" decoding="async">
+                </div>
+
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span>Neo4j</span>
+                        <span>SPARQL</span>
+                        <span>GDS</span>
+                    </div>
+
+                    <h3 class="project-title">Music Contributor Network Analysis</h3>
+
+                    <p class="project-desc">
+                        Knowledge graph project untuk memodelkan jaringan lagu, artis, genre, record label, dan negara
+                        menggunakan Wikidata, DBpedia, Neo4j, dan Graph Data Science.
+                    </p>
+                </div>
+            </article>
         </section>
+
 
         <div class="empty-state" id="emptyState">
             <h3>No project found</h3>
