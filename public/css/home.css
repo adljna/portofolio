@@ -117,7 +117,6 @@ body {
             100% 12%,
             100% 100%,
             0 100%);
-    background: rgba(255, 255, 255, 0.14);
     backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
     border-top: 1px solid rgba(255, 255, 255, 0.25);
@@ -862,6 +861,14 @@ body {
 }
 
 @media (max-width: 768px) {
+    #experience {
+        clip-path: none !important;
+        -webkit-clip-path: none !important;
+        margin-top: -1px !important;
+        padding-top: 72px !important;
+        border-radius: 0 !important;
+    }
+
     .experience-inner {
         min-height: auto;
         padding: 88px 0 70px;
@@ -896,38 +903,6 @@ body {
         width: 260px;
         font-size: 13px;
     }
-}
-
-@media (max-width: 768px) {
-    .experience-inner {
-        width: min(100% - 28px, 1200px);
-        padding: 88px 0;
-    }
-
-    .experience-gallery {
-        gap: 18px;
-    }
-
-    .experience-item {
-        flex-basis: 82vw;
-        border-radius: 26px;
-    }
-
-    .experience-image {
-        height: 220px;
-    }
-
-    .experience-content {
-        padding: 24px;
-    }
-
-    .experience-content h3 {
-        font-size: 21px;
-    }
-
-    .experience-nav {
-        display: none;
-    }
 
     .project-gallery-btn {
         margin-top: 18px;
@@ -955,6 +930,27 @@ body {
 
     .project-nav-arrow.next {
         right: 8px;
+    }
+
+    #experience {
+        border-top: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    #experience::before,
+    #experience::after {
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    #about,
+    #skills,
+    .skills-section,
+    .about-section {
+        border-bottom: none !important;
+        box-shadow: none !important;
     }
 }
 
