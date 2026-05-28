@@ -416,6 +416,7 @@ h2 {
     gap: 11px;
 }
 
+.feature-card,
 .pipeline-step {
     display: grid;
     grid-template-columns: 45px 1fr;
@@ -427,6 +428,7 @@ h2 {
     background: rgba(255, 255, 255, .10);
 }
 
+.feature-card>span,
 .pipeline-step>span {
     display: grid;
     place-items: center;
@@ -1654,9 +1656,8 @@ h2 {
         padding: 6px;
     }
 
-    .nav-pills a {
-        height: 30px;
-        padding: 0 8px;
+    .project-nav .nav-pills a {
+        padding: 8px 10px;
         font-size: 10.5px;
     }
 
@@ -1758,6 +1759,71 @@ h2 {
 
     .dashboard-frame {
         min-height: 340px;
+    }
+}
+
+@media (max-width: 720px) {
+    .project-nav {
+        position: fixed;
+        top: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(100% - 32px);
+        max-width: 390px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        z-index: 1000;
+    }
+
+    .project-nav .brand-link {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        padding: 0;
+        z-index: 5;
+    }
+
+    .project-nav .brand-link span:last-child {
+        display: none;
+    }
+
+    .project-nav .brand-back {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border-radius: 999px;
+    }
+
+    .project-nav .nav-pills {
+        width: calc(100% - 46px);
+        margin-left: 42px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 6px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .project-nav .nav-pills::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-nav .nav-pills a {
+        flex: 0 0 auto;
+        padding: 8px 12px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 }
 

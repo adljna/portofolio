@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nailah Adlina | Personal Website</title>
+    <title>Nailah Adlina | Project Gallery</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -220,8 +220,8 @@
                         Knowledge Graph
                     </span>
 
-                    <img src="{{ asset('images/project6.webp') }}"
-                        alt="Music contributor knowledge graph project" loading="lazy" decoding="async">
+                    <img src="{{ asset('images/project6.webp') }}" alt="Music contributor knowledge graph project"
+                        loading="lazy" decoding="async">
                 </div>
 
                 <div class="project-body">
@@ -236,6 +236,37 @@
                     <p class="project-desc">
                         Knowledge graph project untuk memodelkan jaringan lagu, artis, genre, record label, dan negara
                         menggunakan Wikidata, DBpedia, Neo4j, dan Graph Data Science.
+                    </p>
+                </div>
+            </article>
+
+            <article class="project-card reveal delay-3" data-category="ux"
+                data-keywords="indonesaku ui ux case study design thinking cultural platform traditional art performance ticketing maze testing ueq user research empathy map prototype figma">
+                <a href="{{ route('projects.indonesaku') }}" class="project-open"
+                    aria-label="Open IndoneSaku project">↗</a>
+
+                <div class="project-image">
+                    <span class="project-category">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        UX Design
+                    </span>
+
+                    <img src="{{ asset('images/project7.webp') }}"
+                        alt="IndoneSaku UI/UX case study project" loading="lazy" decoding="async">
+                </div>
+
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span>Design Thinking</span>
+                        <span>Figma</span>
+                        <span>Maze</span>
+                    </div>
+
+                    <h3 class="project-title">IndoneSaku</h3>
+
+                    <p class="project-desc">
+                        UX design project for a digital platform that helps users discover traditional art performances,
+                        access cultural information, and purchase tickets through a more centralized experience.
                     </p>
                 </div>
             </article>

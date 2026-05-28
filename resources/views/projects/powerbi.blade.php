@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Power BI IT BSC Dashboard | Project Detail</title>
+    <title>Project Detail | Power BI IT BSC Dashboard</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,7 +60,7 @@
 
             <div class="hero-visual reveal delay-1" aria-label="Project summary visualization">
                 <div class="project-card-visual">
-                    <img src="{{ asset('images/project1.png') }}"
+                    <img src="{{ asset('images/project1.webp') }}"
                         alt="Power BI IT Balanced Scorecard Dashboard preview">
 
                     <div class="visual-summary">
@@ -99,7 +99,7 @@
         <section class="content-section two-column" id="process">
             <div class="section-copy reveal">
                 <span class="section-kicker">01 · Workflow</span>
-                <h2>From KPI framework to executive dashboard.</h2>
+                <h2>From KPI framework to executive dashboard </h2>
                 <p>
                     The project starts from reviewing the company’s annual report to define IT Balanced Scorecard
                     objectives, mapping relevant KPI indicators, preparing dummy KPI datasets based on the required
@@ -160,7 +160,7 @@
         <section class="content-section">
             <div class="section-heading reveal">
                 <span class="section-kicker">02 · Key Insights</span>
-                <h2>What this project highlights?</h2>
+                <h2>What this project highlights</h2>
             </div>
 
             <div class="insight-grid">
@@ -196,7 +196,7 @@
         <section class="content-section" id="results">
             <div class="section-heading reveal">
                 <span class="section-kicker">03 · Results</span>
-                <h2>The dashboard turns KPI documentation into visual performance monitoring.</h2>
+                <h2>The dashboard turns KPI documentation into visual performance monitoring </h2>
                 <p>
                     Instead of keeping KPI definitions as static tables, the project structures them into interactive
                     reporting layers that can support management review and operational evaluation.
@@ -240,7 +240,7 @@
 
                 <div class="perspective-preview">
                     <div class="dashboard-frame">
-                        <img id="preview-image" src="{{ asset('images/projects/powerbi/cc.png') }}"
+                        <img id="preview-image" src="{{ asset('images/projects/powerbi/cc.webp') }}"
                             alt="Corporate Contribution Dashboard View">
                     </div>
                 </div>
@@ -250,7 +250,7 @@
         <section class="content-section">
             <div class="section-heading reveal">
                 <span class="section-kicker">04 · Takeaways</span>
-                <h2>What can be communicated from this project?</h2>
+                <h2>What can be communicated from this project</h2>
             </div>
 
             <div class="takeaway-grid">
@@ -390,19 +390,19 @@
 
             const perspectiveData = {
                 corporate: {
-                    image: "{{ asset('images/projects/powerbi/cc.png') }}",
+                    image: "{{ asset('images/projects/powerbi/cc.webp') }}",
                     alt: "Corporate Contribution Dashboard View"
                 },
                 customer: {
-                    image: "{{ asset('images/projects/powerbi/co.png') }}",
+                    image: "{{ asset('images/projects/powerbi/co.webp') }}",
                     alt: "Customer Orientation Dashboard View"
                 },
                 operational: {
-                    image: "{{ asset('images/projects/powerbi/oe.png') }}",
+                    image: "{{ asset('images/projects/powerbi/oe.webp') }}",
                     alt: "Operational Excellence Dashboard View"
                 },
                 future: {
-                    image: "{{ asset('images/projects/powerbi/fo.png') }}",
+                    image: "{{ asset('images/projects/powerbi/fo.webp') }}",
                     alt: "Future Orientation Dashboard View"
                 }
             };
